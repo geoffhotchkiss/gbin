@@ -1,0 +1,58 @@
+<head>
+  <title>gbin</title>
+</head>
+
+<body>
+	<div id="gbin-login">
+		{{loginButtons align="right"}}
+	</div>
+	<div id="gbin-wrapper">
+		<div id="gbin-welcome">
+			{{> hello}}
+		</div>
+		<div id="gbin-bin">
+			{{> bin}}
+		</div>
+	</div>
+</body>
+
+<template name="hello">
+	<h1>gBin</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+<template name="bin">
+	<div id="gbin-content">
+		{{#if loggedIn}}
+		<p>
+			<textarea rows="4" autofocus="true" id="gbin-tosave"></textarea>
+		</p>
+		<input type="button" value="Add this shit" />
+		<div id="saves">
+			{{> saves}}
+		</div>
+		{{else}}
+		<div id="introMessage"> 
+			{{> introMessage}} 
+		</div>
+		{{/if}}
+	</div>
+</template>
+
+<template name="saves">
+	{{#each everything}}
+	<p>{{type}}: {{stuff}} at {{time}}</p>
+	{{/each}}
+</template>
+
+<template name="introMessage">
+<p>You're not logged in :-(</p>
+<p>
+Welcome to gBin! With gBin, you can easily add and keep track* of small-form content. 
+Simply sign in (with your github account for now) and add small things which you want to remember.
+</p>
+<p id="footnote">
+* once I've actually implemented that... :-)
+</p>
+</template>

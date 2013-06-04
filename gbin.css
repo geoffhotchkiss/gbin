@@ -1,0 +1,43 @@
+/* CSS declarations go here */
+
+body {
+	background-image: url('/hexabump.png');
+}
+
+#footnote {
+	font-size: small;
+}
+
+#gbin-login {
+	float: right;
+	color: #ccc;
+}
+
+#gbin-welcome {
+	background-color: orange;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#gbin-bin {
+	background-color: white;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px 0px 10px 10px; 
+}
+
+#gbin-content {
+	padding: 10px;
+}
+
+#gbin-tosave {
+	width: 99%;
+}
+
+#saves {
+	text-align: center;
+}
