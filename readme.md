@@ -1,4 +1,4 @@
-#(gbin.meteor.com)
+#[gbin](gbin.meteor.com)
 
 ##A place to put public (or private) short form notes which you want to remember
 
